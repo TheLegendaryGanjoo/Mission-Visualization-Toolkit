@@ -116,27 +116,6 @@ public class controller : MonoBehaviour
 
         //Debug.Log(helper.cartToGeo(helper.geoToCart(60, 120, 0, 6378.1f), 6378.1f));
         
-        PLANETCLASS earth = new PLANETCLASS(
-          "earth",
-          6378.1f,
-          Vector3.zero,
-          0,
-          23.44f * Mathf.Deg2Rad,
-          86164.2f,
-          new ORBIT(0.0167f, 149.596f * Mathf.Pow(10, 6), 0 * Mathf.Deg2Rad, 18.272f * Mathf.Deg2Rad, 85.901f * Mathf.Deg2Rad, 31_536_000),
-          texturePath: "materials/textures/earth");
-
-      PLANETCLASS moon = new PLANETCLASS(
-          "moon",
-          1737.1f,
-          Vector3.zero,
-          0,
-          0f,
-          0f,
-          new ORBIT(0.0549f, 0.3844f * Mathf.Pow(10, 6), 28.58f * Mathf.Deg2Rad, 90f * Mathf.Deg2Rad, 90f * Mathf.Deg2Rad, 27.322f * 24f * 60f * 60f),
-          parent:earth,
-          texturePath: "materials/textures/moon");
-
         new cone(2, 1f, 1000, Vector3.zero, Quaternion.identity);
     }
 
