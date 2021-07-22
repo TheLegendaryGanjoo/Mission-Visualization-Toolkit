@@ -106,7 +106,7 @@ public class controller : MonoBehaviour
         pythonOutput.OnDataGenerated += pointCallback;
         pythonOutput.OnDataGenerated += tleCallback;
 
-        earthAboutMoonPreset();
+        //earthAboutMoonPreset();
         //keplerSystemPreset();
         //SoManySats();
 
@@ -136,17 +136,6 @@ public class controller : MonoBehaviour
           new ORBIT(0.0549f, 0.3844f * Mathf.Pow(10, 6), 28.58f * Mathf.Deg2Rad, 90f * Mathf.Deg2Rad, 90f * Mathf.Deg2Rad, 27.322f * 24f * 60f * 60f),
           parent:earth,
           texturePath: "materials/textures/moon");
-
-      PLANETCLASS AIM = new PLANETCLASS(
-          "AIM",
-          1,
-          Vector3.zero,
-          0,
-          0f,
-          0f,
-          new ORBIT("data/SATS/AIM", 120),
-          parent: earth,
-          modelPath: "prefabs/models/GSAT_AURA");
 
         new cone(2, 1f, 1000, Vector3.zero, Quaternion.identity);
     }
